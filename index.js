@@ -5,7 +5,7 @@ const app = express();
 const blogs = require('./data/blogs.json');
 
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: ['http://localhost:3000',"https://nextjs-test-dusky-three.vercel.app"],
     credentials: true,
 }));
 
